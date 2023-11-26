@@ -406,8 +406,9 @@ body {
         width: 100%;
         padding: 10px;
     }
-    .main h3 {
+    .main .title-highlights {
         font-size: 1.125rem;
+        margin: 15px 10px;
     }
     .wrapper {
         grid-template-columns: 1fr;
