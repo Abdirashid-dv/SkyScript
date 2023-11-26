@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyScript</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>SkyScript</h1>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search city.." spellcheck="false" id="search" autocomplete="off">
+            <button type="submit">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </div>
+
+        <div class="location">
+            <button> <i class="fa-solid fa-location-crosshairs"></i>Current Location</button>
+        </div>
+    </nav>
+
+    <!-- ASIDE  -->
+    <aside class="aside">
+        <div class="box box-1day">
+            <h2>Now</h2>
+            <div class="weather">
+                <h1 class="temp">5<sup>°c</sup></h1>
+                <div class="weather-icon">
+                    <img src="./Assets/images/01d.png" alt="weather-icon">
+                </div>
+            </div>
+            <p class="weather-description">Broken Clouds</p>
+            <hr>
+            <div class="details">
+                <p id="date_of_today"><i class="fa-regular fa-calendar"></i>Wednesday 1, Mar</p>
+                <p class="city-name"><i class="fa-solid fa-location-dot"></i>London, GB</p>
+            </div>
+        </div>
+        <h3 id="five-days-forecast">5 Days Forecast</h3>
+        <div class="box box-5days">
+            <div class="day-info">
+                <img src="./Assets/images/02d.png" class="dayEmoji">
+                <p class="temp_of_day">7°</p>
+                <p class="date">2 Mar</p>
+                <p class="day-of-week">Thursday</p>
+            </div>
+            <div class="day-info">
+                <img src="./Assets/images/02n.png" class="dayEmoji">
+                <p class="temp_of_day">5°</p>
+                <p class="date">3 Mar</p>
+                <p class="day-of-week">Friday</p>
+            </div>
+            <div class="day-info">
+                <img src="./Assets/images/03d.png" class="dayEmoji">
+                <p class="temp_of_day">7°</p>
+                <p class="date">4 Mar</p>
+                <p class="day-of-week">Saturday</p>
+            </div>
+            <div class="day-info">
+                <img src="./Assets/images/09d.png" class="dayEmoji">
+                <p class="temp_of_day">6°</p>
+                <p class="date">5 Mar</p>
+                <p class="day-of-week">Sunday</p>
+            </div>
+            <div class="day-info">
+                <img src="./Assets/images/09n.png" class="dayEmoji">
+                <p class="temp_of_day">6°</p>
+                <p class="date">6 Mar</p>
+                <p class="day-of-week">Monday</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN-->
+    <main class="main">
+        <h3>Todays Highlights</h3>
+        <div class="wrapper">
+            <div class="air-quality-container">
+                <p>Air Quality Index</p>
+                <div class="air-quality-details">
+                    <i class='bx bx-wind'></i>
+                    <div>
+                        <div class="title label-1">PM<sub>2.5</sub></div>
+                        <h3 class="label-data label-1-data">3.90</h3>
+                    </div>
+                    <div>
+                        <div class="title label-2">SO<sub>2</sub></div>
+                        <h3 class="label-data label-2-data">7.75</h3>
+                    </div>
+                    <div>
+                        <div class="title label-3">NO<sub>2</sub></div>
+                        <h3 class="label-data label-3-data">33.36</h3>
+                    </div>
+                    <div>
+                        <div class="title label-4">O<sub>3</sub></div>
+                        <h3 class="label-data label-4-data">38.6</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Sunrise and Sunset -->
+            <div class="sun-time-container">
+                <p>Sunrise & Sunset</p>
+                <div class="sun-time-details">
+                    <i class='bx bx-sun'></i>
+                    <div class="sunrise">
+                        <div class="title-1">Sunrise</div>
+                        <h3 class="sunrise-data">6:46 AM</h3>
+                    </div>
+                    <i class='bx bx-moon'></i>
+                    <div class="sunset">
+                        <div class="title-1">Sunset</div>
+                        <h3 class="sunset-data">5:39 PM</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="humidity-container">
+                <h5>Humidity</h5>
+                <div class="humidity-details">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="humidity-data">82%</p>
+                </div>
+            </div>
+            <div class="pressure-container">
+                <h5>Pressure</h5>
+                <div class="pressure-details">
+                    <img src="./Assets/images/50d.png">
+                    <p class="pressure-data">1025<span>hPa</span></p>
+                </div>
+            </div>
+
+            <div class="visibility-container">
+                <h5>Visibility</h5>
+                <div class="visibility-details">
+                    <i class='bx bx-show'></i>
+                    <p class="visibility-data">10<span>Km</span></p>
+                </div>
+            </div>
+
+            <div class="feels-container">
+                <h5>Feels Like</h5>
+                <div class="feels-details">
+                    <i class="fa-solid fa-temperature-1"></i>
+                    <p class="feels-data">2<sub>°C</sub></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="widget-container">
+        <h3>Today at</h3>
+        <div class="weather-widget-container">
+            <div class="weather-widget">
+                <span class="widget-time">6 PM</span>
+                <img src="./Assets/images/09d.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">9 PM</span>
+                <img src="./Assets/images/03d.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">12 AM</span>
+                <img src="./Assets/images/04d.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">3 AM</span>
+                <img src="./Assets/images/03n.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">6 AM</span>
+                <img src="./Assets/images/10n.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">9 AM</span>
+                <img src="./Assets/images/11d.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">12 PM</span>
+                <img src="./Assets/images/13n.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+            <div class="weather-widget">
+                <span class="widget-time">3 PM</span>
+                <img src="./Assets/images/11n.png" alt="widget-weather-icon" class="widget-weather-icon">
+                <span class="widget-temperature">5°</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
