@@ -134,7 +134,15 @@ async function getHourlyForcast(city) {
 
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(
+            showPosition,
+            (error) => {
+                console.error("Error getting location:", error);
+            },
+            {
+                enableHighAccuracy: true,
+            }
+        );
     } else {
         alert("GeoLocation not supported by this browser.");
     }
@@ -149,7 +157,7 @@ function showPosition(position) {
 }
 
 function reverseGeocode(latitude, longitude) {
-    const apiURL = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=5&appid=${apiKey}`;
+    const apiURL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=5&appid=${apiKey}`;
 
     fetch(apiURL)
         .then((response) => response.json())
