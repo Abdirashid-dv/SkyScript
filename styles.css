@@ -407,7 +407,6 @@ body {
         padding: 10px;
     }
     .main h3 {
-        margin: 15px 10px;
         font-size: 1.125rem;
     }
     .wrapper {
@@ -477,5 +476,9 @@ body {
     }
     .weather-widget-container::-webkit-scrollbar {
         display: none;
+    }
+    .sun-time-details .sunrise-data,
+    .sun-time-details .sunset-data {
+        font-size: 1.675rem;
     }
 }
