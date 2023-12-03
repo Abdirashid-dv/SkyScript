@@ -169,6 +169,11 @@ function reverseGeocode(latitude, longitude) {
 
 // City Input Value
 var city = document.querySelector(".search-bar input");
+document.addEventListener("keypress", (e) => {
+    if (e.key === "Enter" && document.activeElement.tagName == "INPUT") {
+        getWeatherData(city.value);
+    }
+});
 submitBtn.addEventListener("click", () => {
     getWeatherData(city.value);
 });

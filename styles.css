@@ -376,8 +376,36 @@ body {
     font-weight: 500;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Styles for medium screens */
+    .widget-container {
+        overflow-x: auto;
+    }
+    .box {
+        width: 35%;
+    }
+    .humidity-details .humidity-data,
+    .visibility-details .visibility-data,
+    .feels-container .feels-data,
+    .visibility-container i,
+    .feels-container i,
+    .sun-time-details .sunrise-data,
+    .sun-time-details .sunset-data,
+    .air-quality-details .label-data,
+    .pressure-details .pressure-data,
+    .air-quality-details i,
+    .sun-time-details i,
+    .feels-container .feels-data sub,
+    .humidity-details i {
+        font-size: 1.275rem;
+    }
+    .pressure-details img {
+        width: 25px;
+    }
+}
+
 /* MOBILE BREAKPOINTS */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 762px) {
     /* TODO:: */
     .nav-bar .search-bar {
         display: none;
