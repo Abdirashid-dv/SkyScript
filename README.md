@@ -19,7 +19,7 @@ SkyScript is a simple and elegant weather application that provides current weat
 - Weather widgets for specific time intervals within the day.
 
 ## Screenshots
-![SkyScript App Screenshot](./design/screenshot_design.png)
+![SkyScript App Screenshot](./Assets/design/screenshot_design.png)
 
 ## Installation
 1. Clone the repository.
